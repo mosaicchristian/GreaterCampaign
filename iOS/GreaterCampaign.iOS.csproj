@@ -9,6 +9,11 @@
     <RootNamespace>GreaterCampaign.iOS</RootNamespace>
     <AssemblyName>GreaterCampaign.iOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <ReleaseVersion>1.0</ReleaseVersion>
+    <Description>iOS Specific Project settings and code for the GREATER campaign app.
+Daily prayer guide for the GREATER campaign, running October 29 - November 11th.  
+Each day, a new bible passage and prayer guidance are provided for users to follow along.  
+A notification option provides the ability to set a reminder for each day.</Description>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,7 +48,7 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType></DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>

@@ -48,5 +48,7 @@ Global
 		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
 		$0.StandardHeader = $2
 		$0.VersionControlPolicy = $3
+		description = @Daily prayer guide for the GREATER campaign, running October 29 - November 11th.  \nEach day, a new bible passage and prayer guidance are provided for users to follow along.  \nA notification option provides the ability to set a reminder for each day.
+		version = 1.0
 	EndGlobalSection
 EndGlobal

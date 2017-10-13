@@ -16,6 +16,11 @@
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <ReleaseVersion>1.0</ReleaseVersion>
+    <Description>Android Specific Project settings and code for the GREATER campaign app.
+Daily prayer guide for the GREATER campaign, running October 29 - November 11th.  
+Each day, a new bible passage and prayer guidance are provided for users to follow along.  
+A notification option provides the ability to set a reminder for each day.</Description>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
