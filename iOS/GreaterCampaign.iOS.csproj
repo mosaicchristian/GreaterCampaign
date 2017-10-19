@@ -11,8 +11,8 @@
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <ReleaseVersion>1.0</ReleaseVersion>
     <Description>iOS Specific Project settings and code for the GREATER campaign app.
-Daily prayer guide for the GREATER campaign, running October 29 - November 11th.  
-Each day, a new bible passage and prayer guidance are provided for users to follow along.  
+Daily prayer guide for the GREATER campaign, running October 29 - November 11th.
+Each day, a new bible passage and prayer guidance are provided for users to follow along.
 A notification option provides the ability to set a reminder for each day.</Description>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
@@ -189,6 +189,10 @@ A notification option provides the ability to set a reminder for each day.</Desc
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
   </ItemGroup>
   <Import Project="..\GreaterCampaign\GreaterCampaign.projitems" Label="Shared" Condition="Exists('..\GreaterCampaign\GreaterCampaign.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
