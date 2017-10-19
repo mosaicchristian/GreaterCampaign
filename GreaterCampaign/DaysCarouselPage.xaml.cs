@@ -23,9 +23,9 @@ namespace GreaterCampaign
 			}
 
             // TODO: Correct current to be the current day
-            //DateTime current = DateTime.Now;
-            //DateTime current = new DateTime(2017, 10, 30);
-            DateTime current = new DateTime(2017, 11, 12);
+            DateTime current = DateTime.Now;
+            //current = new DateTime(2017, 10, 30);
+            //DateTime current = new DateTime(2017, 11, 12);
 
             DateTime start = new DateTime(2017, 10, 29);
             DateTime end = new DateTime(2017, 11, 12);
@@ -35,6 +35,9 @@ namespace GreaterCampaign
             // ex) Oct 23 - Oct 22 = 1; it should really be 2
             TimeSpan fromStart = current.Subtract(start);
             var availableDays = fromStart.Days + 1;
+
+            //Show the first day if the campaign has not yet started
+            if (availableDays < 1) { availableDays = 1; }
 
             for (int i = 0; i < pages.Count && i < availableDays; i++ ) 
             {
